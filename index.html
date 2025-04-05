@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Roboto:ital,wght@0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Nike</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media.css" />
+  </head>
+  <body>
+    <header class="head-cont">
+      <div class="logo">
+        <a href=""
+          ><img src="./images/ed69f7fa91929ff49ecafac2bfd723602(1).png" alt=""
+        /></a>
+      </div>
+      <nav>
+        <ul class="head-list-cont">
+          <li class="navigation">
+            <a class="nav-item" href="#main-section">Main page</a>
+          </li>
+          <li class="navigation">
+            <a class="nav-item" href="#adv-section">Benefits</a>
+          </li>
+          <li class="navigation">
+            <a class="nav-item" href="#adv-section">Advantages</a>
+          </li>
+          <li class="navigation">
+            <a class="nav-item" href="#rev-section">Reviews</a>
+          </li>
+          <li class="navigation">
+            <a class="nav-item" href="#footer-section">Contacts</a>
+          </li>
+          <li class="navigation">
+            <a class="nav-item" href="#order-section">Order</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="lang-cont">
+        <li><a class="ua" href="">Ua</a></li>
+        <li><a class="eng" href="">Eng</a></li>
+      </ul>
+    </header>
+
+    <section class="main-box">
+      <ul class="main-cont" id="main-section">
+        <li>
+          <img
+            class="main-logo"
+            src="./images/ed69f7fa91929ff49ecafac2bfd723601(1).png"
+            alt=""
+          />
+        </li>
+        <li class="under-logo">С&R</li>
+        <li><h1 class="main-text">ColoRawe</h1></li>
+        <li class="under-main">Your dream Nike</li>
+        <li class="main-info">
+          On this site you can find custom Nike sneakers of your dreams. The
+          original company caт`t create such beautiful sneakers as we do. Good
+          luck finding your way in the world of custom sneakers.
+        </li>
+      </ul>
+      <button class="main-button">
+        <a class="buy-button" href="">Buy my Nike</a>
+      </button>
+    </section>
+
+    <section class="adv-cont">
+      <div class="advantages" id="adv-section">
+        <div class="advantage-one">
+          <p class="adv-p">Premium Quality</p>
+          <img class="stars" src="./images/Звёзды1(1).png" alt="" />
+        </div>
+        <div class="advantage-two">
+          <img class="paints" src="./images/Краски1(1).png" alt="" />
+          <p class="adv-p2">Indelible paint</p>
+        </div>
+        <div class="advantage-three">
+          <p class="adv-p3">Fast shipping</p>
+          <img class="car" src="./images/Грузан1(1).png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="revs">
+      <div class="h2-cont" id="rev-section">
+        <h2 class="reviews">Reviews</h2>
+      </div>
+      <div class="team-cont">
+        <div class="member-one">
+          <h3 class="about">
+            Sneakers are very comfortable and well painted, nothing has worn off
+            in a year.
+          </h3>
+          <p class="date">25.11</p>
+          <div class="team-info">
+            <img class="team-picture" src="./images/Ellipse17(1).png" alt="" />
+            <ul class="info-cont">
+              <li class="name">John Teylor</li>
+              <li class="with-us">With us from 2018</li>
+            </ul>
+          </div>
+        </div>
+        <div class="member-two">
+          <h3 class="about">
+            I'm very happy with this color scheme. They match all my clothes.
+          </h3>
+          <p class="date">05.01</p>
+          <div class="team-info">
+            <img class="team-picture" src="./images/Ellipse18(1).png" alt="" />
+            <ul class="info-cont">
+              <li class="name">Elizabeth Garsia</li>
+              <li class="with-us">With us from 2020</li>
+            </ul>
+          </div>
+        </div>
+        <div class="member-three">
+          <h3 class="about">
+            Just right if you need to go to a party. I use them actively, the
+            paint is super.
+          </h3>
+          <p class="date">18.06</p>
+          <div class="team-info">
+            <img class="team-picture" src="./images/Ellipse19(1).png" alt="" />
+            <ul class="info-cont">
+              <li class="name">Tom Maquare</li>
+              <li class="with-us">With us from 2019</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ord">
+      <h2 class="order">Order</h2>
+    
+      <form action="#" id = "form"  class="text-cont" id="order-section">
+        <span class="email-wrapper">
+          <p class="accept">Confirm</p>
+          <input type="email" name="email" class="email_req_email" placeholder="Write your email" required />
+        </span>
+    
+        <input type="text" name="country" class="country" placeholder="Your Country" required />
+        <input type="text" name="city" class="city" placeholder="Your City" required />
+        <input type="text" name="address" class="adress" placeholder="Your Address" required />
+    
+        <button type="submit" class="send">Order my Nike</button>
+      </form>
+    </section>
+    
+
+    <footer class="footer">
+      <div class="first-foot" id="footer-section">
+        <ul class="que-cont">
+          <li class="questions">Have a question?</li>
+          <li class="questions">Have a proposal for cooperation?</li>
+          <li class="questions">Advertising questions?</li>
+        </ul>
+
+        <ul class="que-cont-two">
+          <li>
+            <a class="emails" href="meilto:ColoRawe_support@gmail.com"
+              >ColoRawe_support@gmail.com</a
+            >
+          </li>
+          <li>
+            <a class="emails" href="meilto:ColoRawe_Cooperation@gmail.com"
+              >ColoRawe_Cooperation@gmail.com</a
+            >
+          </li>
+          <li>
+            <a class="emails" href="meilto:ColoRawe_Advertising@gmail.com"
+              >ColoRawe_Advertising@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="second-foot">
+        <div class="right">
+          <p class="rights">2025 ColoRawe @All rights reserved</p>
+          <address class="adres">Ukraine</address>
+        </div>
+        <ul>
+          <li>
+            <img
+              class="footer-logo"
+              src="./images/ed69f7fa91929ff49ecafac2bfd723602(1).png"
+              alt=""
+            />
+          </li>
+          <li class="under-foot">С&R</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="main.js"></script>
+    <script src="trans.js"></script>
+  </body>
+</html>
