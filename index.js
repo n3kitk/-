@@ -4,23 +4,33 @@ form.addEventListener('submit', formSend);
 async function formSend(e) {
     e.preventDefault();
     let error = formValidate(form);
-    let formData = new FormData(form);
+
     if (error === 0) {
-        let response = await fetch('sendmail.php', {
+        let response = await fetch('http://localhost:8080/api/sneakers', {
             method: 'POST',
-            body: formData
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                brand: form.elements['brand'].value,
+                model: form.elements['model'].value,
+                size: form.elements['size'].value,
+                color: form.elements['color'].value
+            })
         });
+
         if (response.ok) {
             let result = await response.json();
-            alert(result.message);
+            alert("Кросівки успішно додано!");
             form.reset();
         } else {
-            alert('');
+            alert('Помилка збереження на сервері');
         }
     } else {
         alert('Заповніть неодмінні поля');
     }
 }
+
 
 function formValidate(form) {
     let error = 0;
